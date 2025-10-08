@@ -34,6 +34,7 @@ import kotlin.reflect.KProperty1
  */
 inline fun <E> validate(obj: E, block: Validator<E>.(E) -> Unit): E {
     val validator = Validator(obj).apply { block(obj) }
+    println(" c==8 MY VALIKKKKKKTOR ---------------------")
     if (validator.constraintViolations.isNotEmpty()) {
         throw ConstraintViolationException(validator.constraintViolations)
     }

@@ -3,7 +3,7 @@ plugins {
     id("org.springframework.boot") version "1.5.22.RELEASE"
 }
 
-val jacksonVersion = "2.9.10"
+val jacksonVersion: String by project
 val jacksonMoneyVersion = "1.2.0"
 val moneyVersion = "1.1"
 val monetaVersion = "1.4.2"
